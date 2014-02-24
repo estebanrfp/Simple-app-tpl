@@ -1,4 +1,4 @@
-<strong>Descripción del Proyecto</strong><br>
+<h1>Descripción del Proyecto</h1><br>
 /////////////////////////////////////////
 <br>-
 <br>
@@ -10,7 +10,7 @@
 <br>
 <br>-
 <br>
-<strong>Caracteristicas:</strong><br>
+<h1>Caracteristicas:</h1><br>
 /////////////////////////////
 <br>
 <br>-
@@ -24,6 +24,6 @@
 <br>-
 <br>
 <br>-
-<strong>En colaboracion:</strong><br>
+<h2>En colaboracion:</h2><br>
 //////////////////////////////<br>
-Anwar
+Anwar [UXUID - Desarrollo Web](http://www.uxuid.co/)
