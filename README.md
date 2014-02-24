@@ -26,7 +26,7 @@ Tecnologias:<br>
 <br>
 <br>-
 <h2>En colaboracion:</h2><br>
-<br>Anwar [UXUID - Desarrollo Web](http://www.uxuid.co/)
+<br>[Silver](http://www.github.com/slvr/) [UXUID - Desarrollo Web](http://www.uxuid.co/)
 <br>Estebanrfp[desarrolloactivo.com](http://desarrolloactivo.com/)
 <br>COANelmejor [http://coanelmejor.me](COANelmejor.me)
 <br>leningir89[En proceso]
