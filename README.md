@@ -20,8 +20,7 @@
 <br>-
 <br>
 <h3>Tecnologias:</h3>
-![html5.jpg](estebanrfp.github.com/Simple-app-tpl
-/img/html5.jpg)
+![html5.jpg](https://github.com/estebanrfp/Simple-app-tpl/blob/master/HTML5.jpg)
 <br>-
 <br>
 <br>-
