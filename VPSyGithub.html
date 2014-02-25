@@ -72,7 +72,7 @@ Click en "Add WebHook"
 En el siguiente formulario agregamos
 <br><br>
 <ul>
-<li>Payload URL : http://www.website.com/NombreDelRepocitorio/git.php  
+<li><strong>Payload URL :</strong> http://www.website.com/NombreDelRepocitorio/git.php<br>  
 (Agregamos la direccion de nuestro archivo git.php)</li>
 <br><br>
 <li><strong>Payload version:</strong> v3+form<br>(Dependiendo de nuestra necesidad)</li>
@@ -83,20 +83,21 @@ En el siguiente formulario agregamos
 <br><br>
 Para finalizar esto click en <strong>"Add WebHook"</strong>
 <br><br>
-Realizamos cambios al repocitorio y luego probamos si los cambios hacen efecto en nuestro vps
+<br><br><br><br>
+Realizamos cambios al repocitorio de GitHub y luego revisamos en nuestro VPS si los cambios hacen efecto. Con esta configuracion ya deberia estar funcionando.
 <br><br>
 <br><br>
 <br><br>
-//ANOTACIONES
+<strong>//ANOTACIONES</strong>
 <br><br>
 
-::Servidor
+<strong>::Servidor</strong>
 Un problema al finalizar los pasos era que al intentar visitar la direccion web del archivo git.php desde el navegador
 me arrojaba un error 500, era un error de permisos en el archivo git.php , los cambie a 664 y me funciono.
 <br><br><br><br>
 
 
-::GitHub
+<strong>::GitHub</strong>
 <br><br>
 
 A.Para mostrar la url asociada a cada repocitorio ( debemos estar dentro de la carpeta)
