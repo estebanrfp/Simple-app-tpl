@@ -1,106 +1,145 @@
-1) Configurar ssh key entre github y el vps
-https://help.github.com/articles/generating-ssh-keys
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Conectar VPS y Github</title>
+  		<meta charset="utf-8">
+		<meta name="description" content="Como configurar nuestro servidor VPS para que trabaje junto a GitHub y lograr una buena experiencia de trabajo colaborativo.">
+	</head>
+<body>
+  <p><h3>Como configurar nuestro servidor VPS para que trabaje junto a GitHub y lograr una buena experiencia de trabajo colaborativo.</h3></p>
+  <br>
+  <br>
+  <br>
+  <p><strong>1) Configurar ssh key entre github y el vps</strong>
 
-2) Despues de realizar la configuracion anterior y tener nuestro repositorio creado en github
-vamos a conectarnos a nuestro servidor VPS para copiar el repositorio desde nuestro GitHub.
+		https://help.github.com/articles/generating-ssh-keys
 
+<strong>2) Despues de realizar la configuracion anterior y tener nuestro repositorio creado en github
+vamos a conectarnos a nuestro servidor VPS para copiar el repositorio desde nuestro GitHub.</strong>
+<br><br>
 Una vez conectado por medio de ssh en el servidor vps nos dirigimos a la carpeta donde vamos a crear nuestro
 repocitorio
-
+<br><br>
 Ejemplo:
-
+<br><br>
 		usuario/public_html/test/
-
+<br><br>
 Una vez dentro del directorio vamos a clonar nuestro repositorio github por medio del siguiente comando:
-
+<br><br>
 git --init
 git clone git@github.com:NombreDeUsuarui/NombreDeRepositorio.git
-
+<br><br>
 y con esto se debe crear una carpeta dentro del directorio actual con el nombre de los repositorios
-
+<br><br>
 luego nos movemos a la carpeta de nuestro repocitorio recien creado (segun nuestro ejemplo seria NombreDeRepocitorio)
-
+<br><br>
 cd /public_html/test/NombreDeRepositorio
-
+<br><br>
 Lo siguiente seria hacer un test manual realizando cambios en el repocitorio y luego mediante
-
+<br><br>
 git pull 
-
+<br><br>
 Revisamos si se actualizaron los archivos del repocitorio en github a nuestro VPS
-
-3) Creamos un archivo php Ejemplo git.php
-
-en el vamos a agregar el siguiente codigo
-
-<?php `git pull origin master`;
-
-O
-
-<?php `git pull`;
-
+<br><br>
+<strong>3) Creamos un archivo php Ejemplo git.php</strong>
+<br><br>
+en el vamos a agregar el siguiente codigo</p>
+<br><br>
+< ? php `git pull origin master` ;
+<br><br>
+< ? php `git pull` ; 
+<br><br><br>
 Este archivo git.php lo subimos a la raiz de nuestro folder (Del repocitorio descargado)
-
+<br><br>
 ejemplo :
-
+<br><br>
 /public_html/test/NombreDeRepositorio
-
+<br><br>
 4) Nos diregimos a la direccion web de nuestro repocitorio en github 
-
+<br><br>
 Ejemplo:
-
+<br><br>
 https://github.com/NombreDeUsuario/NombreDeRepocitorio
-
+<br><br>
 *** Necesitamos ser o tener privilegios de administrador (en nuestra cuenta de GitHub) para poder hacer esto.
-
+<br><br>
 Buscamos dentro de la pagina de nuestro repocitorio una opcion llamada Settings ( bloque del lado derecho en mi caso)
-
+<br><br>
 Luego de entrar click en WebHooks & Services
-
+<br><br>
 Click en "Add WebHook"
-
+<br><br>
 En el siguiente formulario agregamos
-
+<br><br>
 Ejemplo:
-
+<br><br>
 Payload URL : http://www.website.com/NombreDelRepocitorio/git.php  
 (Agregamos la direccion de nuestro archivo git.php)
-
+<br><br>
 Payload version: v3+form
 (Dependiendo de nuestra necesidad)
-
-
+<br><br>
+<br><br>
 Which events would you like to trigger this webhook?
-
+<br><br>
 Send me everything. 
 (Dependiendo de nuestra necesidad)
-
+<br><br>
 Para finalizar esto click en "Add WebHook"
-
+<br><br>
 Realizamos cambios al repocitorio y luego probamos si los cambios hacen efecto en nuestro vps
-
-
-
+<br><br>
+<br><br>
+<br><br>
 //ANOTACIONES
-
+<br><br>
 
 ::Servidor
 Un problema al finalizar los pasos era que al intentar visitar la direccion web del archivo git.php desde el navegador
 me arrojaba un error 500, era un error de permisos en el archivo git.php , los cambie a 664 y me funciono.
-
+<br><br><br><br>
 
 
 ::GitHub
-
+<br><br>
 
 A.Para mostrar la url asociada a cada repocitorio ( debemos estar dentro de la carpeta)
-
+<br><br>
 		$ git remote -v
 			origin  git://github.com/Usuario/NombreDelRepo.git
-
+<br><br><br><br>
 
 B. Para clonar un repocitorio de GitHub al VPS
-
+<br><br>
 		$ git clone https://github.com/NombreDeUsuario/NombreDeRepocitorio
+<br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+O
+
+ 
+
+
 
 
 
