@@ -1,1 +1,1 @@
-<php "git pull";
+<php "git pull git@github.com:desarrolloactivo/Simple-app-tpl.git";
