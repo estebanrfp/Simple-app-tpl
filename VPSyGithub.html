@@ -6,12 +6,12 @@
 		<meta name="description" content="Como configurar nuestro servidor VPS para que trabaje junto a GitHub y lograr una buena experiencia de trabajo colaborativo.">
 	</head>
 <body>
-  <p><h3>Como configurar nuestro servidor VPS para que trabaje junto a GitHub y lograr una buena experiencia de trabajo colaborativo.</h3></p>
-  <br>
-  <br>
-  <br>
-  <p><strong>1) Configurar ssh key entre github y el vps</strong>
-
+<p><h3>Como configurar nuestro servidor VPS para que trabaje junto a GitHub y lograr una buena experiencia de trabajo colaborativo.</h3></p>
+<br>
+<br>
+<br>
+<p><strong>1) Configurar ssh key entre github y el vps</strong>
+<br><br>
 		https://help.github.com/articles/generating-ssh-keys
 <br><br>
 <strong>2) Despues de realizar la configuracion anterior y tener nuestro repositorio creado en github
@@ -43,7 +43,7 @@ Revisamos si se actualizaron los archivos del repocitorio en github a nuestro VP
 <br><br>
 <strong>3) Creamos un archivo php Ejemplo git.php</strong>
 <br><br>
-en el vamos a agregar el siguiente codigo</p>
+Dentro de este archivo vamos a agregar el siguiente codigo php
 <br><br>
 < ? php `git pull origin master` ;
 <br><br>
@@ -71,21 +71,17 @@ Click en "Add WebHook"
 <br><br>
 En el siguiente formulario agregamos
 <br><br>
-Ejemplo:
+<ul>
+<li>Payload URL : http://www.website.com/NombreDelRepocitorio/git.php  
+(Agregamos la direccion de nuestro archivo git.php)</li>
 <br><br>
-Payload URL : http://www.website.com/NombreDelRepocitorio/git.php  
-(Agregamos la direccion de nuestro archivo git.php)
-<br><br>
-Payload version: v3+form
-(Dependiendo de nuestra necesidad)
+<li><strong>Payload version:</strong> v3+form<br>(Dependiendo de nuestra necesidad)</li>
 <br><br>
 <br><br>
-Which events would you like to trigger this webhook?
+<li><strong>Which events would you like to trigger this webhook?:</strong>Send me everything.<br>
+(Dependiendo de nuestra necesidad)</li>
 <br><br>
-Send me everything. 
-(Dependiendo de nuestra necesidad)
-<br><br>
-Para finalizar esto click en "Add WebHook"
+Para finalizar esto click en <strong>"Add WebHook"</strong>
 <br><br>
 Realizamos cambios al repocitorio y luego probamos si los cambios hacen efecto en nuestro vps
 <br><br>
@@ -113,6 +109,7 @@ B. Para clonar un repocitorio de GitHub al VPS
 <br><br>
 		$ git clone https://github.com/NombreDeUsuario/NombreDeRepocitorio
 <br><br>
+</p>
 </body>
 </html>
 
