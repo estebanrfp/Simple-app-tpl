@@ -1,5 +1,21 @@
 Organizacion del proyecto: Pasos a seguir.
 
 
+Tecnologías aplicadas:
+
+HTML5 + JS + CSS3.
+
+Frameworks:
+jQuery Mobile + Cordoba + PhoneGap
+
+Front End
+
+
+
+- Transiciones entre páginas, efectos, desplamiento, suavizado. 
+
+- Cámbio automático del TITLE del documento, al pasar de una página a otra.
 1.
 2.
+
+Back End
