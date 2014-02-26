@@ -20,7 +20,7 @@ A demas de trabajar de forma grupal aprobechando las bondades de github para act
 <br>
 <h2>En colaboracion:</h2><br>
 <br>[Silver](http://www.github.com/slvr/)  / [UXUID - Desarrollo Web](http://www.uxuid.co/)
-<br>[Estebanrfp](http://www.github.com/Estebanrfp/)[desarrolloactivo.com](http://desarrolloactivo.com/)
-<br>[COANelmejor](http://www.github.com/COANelmejor/) [http://coanelmejor.me](COANelmejor.me)
-<br>[leningir89](http://www.github.com/leningir89/)[En proceso]
+<br>[Estebanrfp](http://www.github.com/Estebanrfp/) / [desarrolloactivo.com](http://desarrolloactivo.com/)
+<br>[COANelmejor](http://www.github.com/COANelmejor/) / [http://coanelmejor.me](COANelmejor.me)
+<br>[leningir89](http://www.github.com/leningir89/) / [En proceso]
 
