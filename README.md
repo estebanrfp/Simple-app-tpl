@@ -24,3 +24,19 @@ A demas de trabajar de forma grupal aprobechando las bondades de github para act
 <br>[COANelmejor](http://www.github.com/COANelmejor/) / [http://coanelmejor.me](COANelmejor.me)
 <br>[leningir89](http://www.github.com/leningir89/) / [En proceso]
 
+Actualmente:
+============
+
++Estructura simple como base en html5 + jQuery Mobile + css/estilos.css
+
++Listado de items
+
+Próximos pasos
+==============
+
++jquery mobile touch events
+
++filtro de búsqueda de contenidos
+
++Acceso a información externa, uso de ajax
+
