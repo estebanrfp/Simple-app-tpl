@@ -1,1 +1,44 @@
 *.db
+# -- Cloud9 ------------------------------
+.c9
+.c9/
+
+# -- Sistemas Operativos ------------------------------
+*.sh
+
+# Windows
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+
+.*
+!.gitignore
+!.htaccess
+*~
+
+# Mac OS X
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# -- Editores -----------------------------------------
+
+# sublimetext
+/*.sublime-project
+*.sublime-workspace
+
+# -- preprosesadores -----------------------------------------
+
+style.css.map
+
+# -- node_modules -----------------------------------------
+node_modules/*
